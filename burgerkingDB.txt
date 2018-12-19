@@ -1,0 +1,15 @@
+create table card1(
+  id int unsigned auto_increment not null,
+  name varchar(32) not null,
+  date_created timestamp default now(),
+  number int,
+  price int,
+  place varchar(32) not null,
+  primary key (id)
+);
+
+create table realpoints(
+  name varchar(32) not null,
+  point int(12),
+  number varchar(12)
+);
